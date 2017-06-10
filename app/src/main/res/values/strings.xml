@@ -4,6 +4,19 @@
     <string name="title_activity_tabbed">TabbedActivity</string>
     <string name="section_format">Hello World from section: %1$d</string>
     <string name="title_activity_maps">Map</string>
-    <string name="hint_city_name">Please enter the city...</string>
-    <string name="button_ok">Ok</string>
+    <string name="hint_city_name">Please enter the city…</string>
+    <string name="button_ok">OK</string>
+    <string name="country_tv">Country:</string>
+    <string name="city_tv">City:</string>
+    <string name="city_choice">You choice is </string>
+    <string name="dialog_ok_btn_text">OK</string>
+    <string name="dialog_cancel_btn_text">Cancel</string>
+    <string name="pressure_tv">Pressure:</string>
+    <string name="humidity_tv">Humidity:</string>
+    <string name="humidity_percent">%</string>
+    <string name="short_description">Short description:</string>
+    <string name="wind_speed_tv">Wind speed:</string>
+    <string name="error_dialog_text">Something went wrong:(( Please try again later</string>
+    <string name="error_dialog_btn_close_app">Close app</string>
+
 </resources>
