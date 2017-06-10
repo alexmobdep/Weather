@@ -1,28 +1,16 @@
-package com.example.alex.largo.weather.ui.add_new_card;
+package com.example.alex.largo.weather.ui.change_coordinates;
 
 import android.content.Intent;
 import android.location.Location;
 import android.support.design.widget.TabLayout;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.os.Bundle;
-import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.view.View;
-import android.view.ViewGroup;
-
-import android.widget.TextView;
 
 import com.example.alex.largo.weather.R;
-import com.example.alex.largo.weather.ui.add_new_card.adapter.SectionsPagerAdapter;
+import com.example.alex.largo.weather.ui.change_coordinates.adapter.SectionsPagerAdapter;
 import com.example.alex.largo.weather.ui.main_screen.WeatherActivity;
 import com.example.alex.largo.weather.utils.LocationUtils;
 import com.google.android.gms.maps.model.LatLng;

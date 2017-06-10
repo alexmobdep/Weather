@@ -1,4 +1,4 @@
-package com.example.alex.largo.weather.ui.add_new_card.fragments;
+package com.example.alex.largo.weather.ui.change_coordinates.fragments;
 
 
 import android.content.Context;
@@ -10,10 +10,9 @@ import android.support.v7.app.AlertDialog;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
 import com.example.alex.largo.weather.R;
-import com.example.alex.largo.weather.ui.add_new_card.OnDataPass;
+import com.example.alex.largo.weather.ui.change_coordinates.OnDataPass;
 import com.example.alex.largo.weather.utils.LocationUtils;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;

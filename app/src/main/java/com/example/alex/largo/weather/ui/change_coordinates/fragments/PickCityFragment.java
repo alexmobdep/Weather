@@ -1,4 +1,4 @@
-package com.example.alex.largo.weather.ui.add_new_card.fragments;
+package com.example.alex.largo.weather.ui.change_coordinates.fragments;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -11,7 +11,7 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import com.example.alex.largo.weather.R;
-import com.example.alex.largo.weather.ui.add_new_card.OnDataPass;
+import com.example.alex.largo.weather.ui.change_coordinates.OnDataPass;
 
 public class PickCityFragment extends Fragment implements View.OnClickListener {
 

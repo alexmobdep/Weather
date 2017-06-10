@@ -1,4 +1,4 @@
-package com.example.alex.largo.weather.ui.add_new_card;
+package com.example.alex.largo.weather.ui.change_coordinates;
 
 
 import com.google.android.gms.maps.model.LatLng;

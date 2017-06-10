@@ -1,11 +1,11 @@
-package com.example.alex.largo.weather.ui.add_new_card.adapter;
+package com.example.alex.largo.weather.ui.change_coordinates.adapter;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
-import com.example.alex.largo.weather.ui.add_new_card.fragments.GoogleMapsFragment;
-import com.example.alex.largo.weather.ui.add_new_card.fragments.PickCityFragment;
+import com.example.alex.largo.weather.ui.change_coordinates.fragments.GoogleMapsFragment;
+import com.example.alex.largo.weather.ui.change_coordinates.fragments.PickCityFragment;
 
 public class SectionsPagerAdapter extends FragmentPagerAdapter {
 

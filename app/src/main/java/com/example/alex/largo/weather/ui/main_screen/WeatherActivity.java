@@ -22,12 +22,14 @@ import android.widget.TextView;
 
 import com.example.alex.largo.weather.R;
 import com.example.alex.largo.weather.model.open_weather.OpenWeatherResponse;
-import com.example.alex.largo.weather.ui.add_new_card.TabbedActivity;
+import com.example.alex.largo.weather.ui.change_coordinates.TabbedActivity;
 import com.example.alex.largo.weather.ui.main_screen.impl.WeatherPresenterImpl;
 
 public class WeatherActivity extends AppCompatActivity implements WeatherView {
 
     private static final int REQUEST_CODE = 200;
+    private static final int MIN_TIME_AND_DISTANCE = 0;
+
     public static final String EXTRA_LOCATION_DATA = "location_data_from_tabbed_activity";
 
     private LocationManager mLocationManager;
@@ -69,6 +71,7 @@ public class WeatherActivity extends AppCompatActivity implements WeatherView {
             @Override
             public void onLocationChanged(Location location) {
                 mWeatherPresenter.getWeatherInfo(location);
+                mLocationManager.removeUpdates(mLocationListener);
             }
 
             @Override
@@ -97,8 +100,8 @@ public class WeatherActivity extends AppCompatActivity implements WeatherView {
             }
             return;
         }
-        mLocationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 0,
-                0, mLocationListener);
+        mLocationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, MIN_TIME_AND_DISTANCE,
+                MIN_TIME_AND_DISTANCE, mLocationListener);
 
 
     }
