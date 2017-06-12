@@ -8,7 +8,7 @@
     <string name="button_ok">OK</string>
     <string name="country_tv">Country:</string>
     <string name="city_tv">City:</string>
-    <string name="city_choice">You choice is </string>
+    <string name="city_choice">You choice:</string>
     <string name="dialog_ok_btn_text">OK</string>
     <string name="dialog_cancel_btn_text">Cancel</string>
     <string name="pressure_tv">Pressure:</string>

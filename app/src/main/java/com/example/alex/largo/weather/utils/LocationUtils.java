@@ -13,9 +13,13 @@ import java.util.List;
 import java.util.Locale;
 
 public class LocationUtils {
+    private static final String PROVIDER = "";
+    private static final int MAX_RESULT = 1;
+    private static final int INDEX_ZERO = 0;
+
 
     public static Location convertLatLngToLocation(LatLng latLng){
-        Location location = new Location("");
+        Location location = new Location(PROVIDER);
         location.setLongitude(latLng.longitude);
         location.setLatitude(latLng.latitude);
         return location;
@@ -23,7 +27,7 @@ public class LocationUtils {
 
     public static String convertLatLngToCityName(LatLng latLng, Context context) throws IOException {
         Geocoder gcd = new Geocoder(context, Locale.getDefault());
-        List<Address> addresses = gcd.getFromLocation(latLng.latitude, latLng.longitude, 1);
-        return addresses.get(0).getLocality();
+        List<Address> addresses = gcd.getFromLocation(latLng.latitude, latLng.longitude, MAX_RESULT);
+        return addresses.get(INDEX_ZERO).getLocality();
     }
 }
